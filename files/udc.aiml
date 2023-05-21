@@ -3,27 +3,27 @@
     
     <category>
         <pattern>*</pattern>
-        <template><delay>3</delay>I'm sorry, but I don't seem to have an answer for that. If you're confused, please start from the beginning by saying "Hello".</template>
+        <template><delay>3</delay>I apologize, but it appears that I am unable to provide an answer to your question. If you require assistance, kindly begin from the start by greeting me with a "Hello".</template>
     </category>
     
     <category>
         <pattern>HELLO</pattern>
-        <template><delay>1</delay>Hi! My name is Career Helper. What is your name? (My name is...)</template>
+        <template><delay>1</delay>Greetings! I am known as Career Helper. May I inquire as to what name you go by? (Start with "My name is...") </template>
     </category>
     
     <category>
         <pattern>MY NAME IS *</pattern>
-        <template><delay>4</delay>It's a pleasure to meet you <set name = "username"><star /></set>. My job is to help you find a career that best fits your interests. Would you like to begin? (Yes, No)</template>
+        <template><delay>4</delay>It's great to meet you <set name = "username"><star /></set>. I am a chatbot that will help you select a better career in the tech industry. Would you like to begin? (Say "Yes" or "No")</template>
     </category>
     
     <category>
         <pattern>NO</pattern>
-        <template><delay>2</delay>That's perfectly fine.  I'll be here whenever you are ready! Just say "Hello" whenever you are ready to begin.</template>
+        <template><delay>2</delay>That's ok.  When you are ready to begin, just say "hello", and we can start again.</template>
     </category>
     
     <category>
         <pattern>YES</pattern>
-        <template><delay>3</delay>Great! I'm just going to ask you a few basic questions, and you just give me the whichever answer best fits with your interests.<delay>2</delay>So, would you say that you are a creative person?
+        <template><delay>3</delay>Great! I'll ask you a few questions about your personality, which will give me an idea of what you would be good at.<delay>2</delay>Do you feel that you are a creative person?
             <button>
                 <text>yes</text>
                 <postback>YESCREATIVE</postback>
@@ -52,7 +52,7 @@
     <category>
         <pattern>YESCREATIVE</pattern>
         <template>
-            <delay>2</delay>Me too! Would you say that you're good at problem solving?
+            <delay>2</delay> Very cool. Ok, next question. Are you good at solving problems?
             <button>
                 <text>yes</text>
                 <postback>YESCREATIVEYESPROBSOLV</postback>
@@ -82,7 +82,7 @@
     <category>
         <pattern>YESCREATIVEYESPROBSOLV</pattern>
         <template>
-            <delay>2</delay>Awesome! Are you a people person?
+            <delay>2</delay>That's really great to hear! One last question. Would you say you are good with people?
             <button>
                 <text>yes</text>
                 <postback>SOFTDEV</postback>
@@ -97,7 +97,8 @@
     <category>
         <pattern>YESCREATIVENOPROBSOLV</pattern>
         <template>
-            <delay>2</delay>Don't worry about that! Are you a people person?
+            <delay>2</delay>That's alright. Not many creative people are good at solving problems.
+            Now, would you say you are good with people?
             <button>
                 <text>yes</text>
                 <postback>WEBDEV</postback>
@@ -112,7 +113,8 @@
     <category>
         <pattern>NOCREATIVEYESPROBSOLV</pattern>
         <template>
-            <delay>2</delay>Awesome! Are you a people person?
+            <delay>2</delay>That's good. Problem solving is very useful in IT.
+            Now, would you say you are good with people?
             <button>
                 <text>yes</text>
                 <postback>INFOSECUANALYST</postback>
@@ -127,7 +129,7 @@
     <category>
         <pattern>NOCREATIVENOPROBSOLV</pattern>
         <template>
-            <delay>2</delay>Don't worry about that! Are you a people person?
+            <delay>2</delay>I see! One final question. Are you good with people?
             <button>
                 <text>yes</text>
                 <postback>COMPSUPPSPEC</postback>
