@@ -8,7 +8,7 @@
     
     <category>
         <pattern>HELLO</pattern>
-        <template><delay>1</delay>Greetings! I am known as Career Helper. May I inquire as to what name you go by? (Start with "My name is...") </template>
+        <template><delay>1</delay>Greetings! I am known as bailinbot. May I inquire as to what name you go by? (Start with "My name is...") </template>
     </category>
     
     <category>
